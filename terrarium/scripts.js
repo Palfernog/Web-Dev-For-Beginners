@@ -24,4 +24,8 @@ function dragElement(terrariumElement) {
         terrariumElement.style.top = terrariumElement.offsetTop - pos2 + 'px';
         terrariumElement.style.left = terrariumElement.offsetLeft - pos1 + 'px';
     }
+    function stopElementDrag() {
+        document.onpointerup = null;
+        document.onpointermove = null;
+    }
 }
